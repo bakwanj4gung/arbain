@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+@import 'tailwind-animations';
+
+@theme {
+  --default-font-family: 'Scheherazade New', serif;
+}
+
+p {
+  @apply leading-loose;
+}
+
+.content {
+  @apply font-medium text-2xl;
+}
+
+.matan {
+  @apply before:content-['_«'] after:content-['»_'] text-red-500 font-semibold;
+}
+
+.rawi-sahabi {
+  @apply text-purple-500;
+}
+
+.rawi-imam {
+  @apply text-green-500;
+}
+
+.open-modal {
+  @apply cursor-pointer underline decoration-2 transition duration-250 ease-out inline-block hover:scale-105 hover:-translate-y-1;
+}
+
+button {
+  @apply cursor-pointer
+}
